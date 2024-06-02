@@ -83,3 +83,9 @@ body {
     position: absolute;
     width: 100%;
 }
+
+.price {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+}
