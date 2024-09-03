@@ -89,3 +89,8 @@ body {
     justify-content: center;
     margin-bottom: 3px;
 }
+
+.price span {
+    font-size: 9em;
+    line-height: 100px;
+}
