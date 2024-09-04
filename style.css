@@ -94,3 +94,8 @@ body {
     font-size: 9em;
     line-height: 100px;
 }
+
+.price sup {
+    font-size: 2em;
+    transform: translateY(-15px);
+}
