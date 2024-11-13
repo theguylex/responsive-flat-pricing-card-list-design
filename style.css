@@ -59,6 +59,7 @@ body {
     background: var(--card-body-bg-color);
     border-radius: 0 0 10px 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
 }
 
 .card-body .top-shape {
@@ -91,11 +92,22 @@ body {
 }
 
 .price span {
-    font-size: 9em;
+    font-size: 7em;
     line-height: 100px;
 }
 
 .price sup {
     font-size: 2em;
-    transform: translateY(-15px);
+    transform: translateY(5px);
+}
+
+.pricing p {
+    font-family: var(--poppins-font);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pricing .type {
+    text-transform: uppercase;
+    font-size: 1.9em;
 }
