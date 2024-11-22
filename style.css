@@ -143,3 +143,11 @@ body {
     font-size: 1.9em;
     margin-left: 15px;
 }
+
+.card-body .card-content ul .active i {
+    color: var(--card-01-color-01);
+}
+
+.card-body .card-content ul .disabled i {
+    color: var(--text-disabled-color);
+}
