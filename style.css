@@ -168,3 +168,7 @@ body {
     margin-bottom: 40px;
     background: linear-gradient(var(--card-01-color-01) 50%, var(--card-01-color-02) 50%);
 }
+
+.card-content .buy-button:hover {
+    background: linear-gradient(var(--card-01-color-02) 50%, var(--card-01-color-01) 50%);
+}
