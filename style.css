@@ -172,3 +172,41 @@ body {
 .card-content .buy-button:hover {
     background: linear-gradient(var(--card-01-color-02) 50%, var(--card-01-color-01) 50%);
 }
+
+.ribbon {
+    width: 110px;
+    height: 110px;
+    /* background: blue; */
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ribbon:before {
+    content: 'Limited Time';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--poppins-font);
+    font-size: 0.8em;
+    font-weight: 600;
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background: var(--card-01-color-01);
+    transform: rotate(45deg) translateY(15px);
+}
+
+.ribbon:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 30px;
+    background: var(--card-01-color-02);
+    transform: rotate(225deg) translateY(15px);
+}
