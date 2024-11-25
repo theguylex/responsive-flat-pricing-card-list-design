@@ -23,6 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -124,7 +125,7 @@ body {
 
 .price sup {
     font-size: 2em;
-    transform: translateY(5px);
+    transform: translateY(-1px);
 }
 
 .pricing p {
@@ -200,11 +201,30 @@ body {
     font-size: 1.9em;
     cursor: pointer;
     margin-bottom: 40px;
+}
+
+.card-01 .card-content .buy-button {
     background: linear-gradient(var(--card-01-color-01) 50%, var(--card-01-color-02) 50%);
 }
 
-.card-content .buy-button:hover {
+.card-02 .card-content .buy-button {
+    background: linear-gradient(var(--card-02-color-01) 50%, var(--card-02-color-02) 50%);
+}
+
+.card-03 .card-content .buy-button {
+    background: linear-gradient(var(--card-03-color-01) 50%, var(--card-03-color-02) 50%);
+}
+
+.card-01 .card-content .buy-button:hover {
     background: linear-gradient(var(--card-01-color-02) 50%, var(--card-01-color-01) 50%);
+}
+
+.card-02 .card-content .buy-button:hover {
+    background: linear-gradient(var(--card-02-color-02) 50%, var(--card-02-color-01) 50%);
+}
+
+.card-03 .card-content .buy-button:hover {
+    background: linear-gradient(var(--card-03-color-02) 50%, var(--card-03-color-01) 50%);
 }
 
 .ribbon {
@@ -231,8 +251,19 @@ body {
     position: absolute;
     width: 150%;
     height: 30px;
-    background: var(--card-01-color-01);
     transform: rotate(45deg) translateY(15px);
+}
+
+.card-01 .ribbon:before {
+    background: var(--card-01-color-01);
+}
+
+.card-02 .ribbon:before {
+    background: var(--card-02-color-01);
+}
+
+.card-03 .ribbon:before {
+    background: var(--card-03-color-01);
 }
 
 .ribbon:after {
@@ -241,6 +272,17 @@ body {
     position: absolute;
     width: 150%;
     height: 30px;
-    background: var(--card-01-color-02);
     transform: rotate(225deg) translateY(15px);
+}
+
+.card-01 .ribbon:after {
+    background: var(--card-01-color-02);
+}
+
+.card-02 .ribbon:after {
+    background: var(--card-02-color-02);
+}
+
+.card-03 .ribbon:after {
+    background: var(--card-03-color-02);
 }
