@@ -45,6 +45,10 @@ body {
 .card-container {
     /* border: 2px solid orange; */
     display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 40px;
+    margin: 50px 0;
 }
 
 .pricing-card {
@@ -65,7 +69,18 @@ body {
 .card-body .top-shape {
     clip-path: polygon(0 0, 100% 0%, 100% 50%, 50% 75%, 0 50%);
     height: 200px;
+}
+
+.card-01 .card-body .top-shape {
     background: var(--card-01-color-01);
+}
+
+.card-02 .card-body .top-shape {
+    background: var(--card-02-color-01);
+}
+
+.card-03 .card-body .top-shape {
+    background: var(--card-03-color-01);
 }
 
 .card-body .top-shape::before {
@@ -74,7 +89,18 @@ body {
     clip-path: polygon(0 0, 100% 0%, 100% 25%, 50% 50%, 0 25%);
     width: 100%;
     height: 200px;
+}
+
+.card-01 .card-body .top-shape::before {
     background: var(--card-01-color-02);
+}
+
+.card-02 .card-body .top-shape::before {
+    background: var(--card-02-color-02);
+}
+
+.card-03 .card-body .top-shape::before {
+    background: var(--card-03-color-02);
 }
 
 .pricing {
@@ -144,8 +170,16 @@ body {
     margin-left: 15px;
 }
 
-.card-body .card-content ul .active i {
+.card-01 .card-body .card-content ul .active i {
     color: var(--card-01-color-01);
+}
+
+.card-02 .card-body .card-content ul .active i {
+    color: var(--card-02-color-01);
+}
+
+.card-03 .card-body .card-content ul .active i {
+    color: var(--card-03-color-01);
 }
 
 .card-body .card-content ul .disabled {
