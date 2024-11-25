@@ -286,3 +286,19 @@ body {
 .card-03 .ribbon:after {
     background: var(--card-03-color-02);
 }
+
+@media screen and (max-width:845px) {
+    .main-container {
+        max-width: 680px;
+    }
+
+    .pricing-card {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .main-container {
+        max-width: 350px;
+    }
+}
